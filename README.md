@@ -79,7 +79,7 @@ Com base nos dados fornecidos pela empresa, realizamos desde a **limpeza e prepa
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/EricPettersonL/Telecom_X_pt1.git
 ```
 
 2. Abra no Google Colab ou Jupyter Notebook.
