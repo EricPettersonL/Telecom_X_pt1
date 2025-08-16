@@ -26,7 +26,7 @@ Com base nos dados fornecidos pela empresa, realizamos desde a **limpeza e prepa
 ---
 
 ## 📂 Estrutura do Projeto
-  *  TelecomX_Data.json → Dados brutos da API
+
   *  notebook.ipynb → Notebook principal com análise e visualizações
   *  README.md → Documentação do projeto
 ---
@@ -37,12 +37,13 @@ Com base nos dados fornecidos pela empresa, realizamos desde a **limpeza e prepa
 
 ### 1️⃣ Introdução
 - **Problema de Churn**: alta taxa de cancelamentos impacta diretamente no faturamento da Telecom X.  
-- **Objetivo**: identificar padrões e fatores relacionados ao cancelamento.  
+- **Objetivo**: identificar padrões e fatores relacionados ao cancelamento.
+- Maiores detalhes no **relatorio** do notebook.
 
 ### 2️⃣ Limpeza e Tratamento de Dados
 - Importação dos dados em JSON via API.  
 - Normalização de colunas aninhadas.  
-- Correção de valores ausentes na variável `Churn`.  
+- Correção de valores ausentes na variável `evasao`.  
 - Conversão de respostas categóricas (`Yes/No → 1/0`).  
 - Criação da variável **Contas_Diarias** (baseada no faturamento mensal).  
 
@@ -50,17 +51,19 @@ Com base nos dados fornecidos pela empresa, realizamos desde a **limpeza e prepa
 - Distribuição geral da evasão (`Churn`).  
 - Relação do churn com variáveis categóricas (gênero, contrato, pagamento).  
 - Análise percentual das categorias.  
-- Comparação de variáveis numéricas (`TotalGasto`, `tenure`) entre clientes que saíram e permaneceram.  
+- Comparação de variáveis numéricas (`TotalGasto`, `Meses de Contrato`) entre clientes que saíram e permaneceram.  
 
 ### 4️⃣ Conclusões e Insights
 - Clientes com **contratos mensais** e **pagamento eletrônico** têm maior propensão à evasão.  
 - Quanto maior o **tempo de contrato**, menor a chance de churn.  
-- Clientes com **baixo gasto total** também tendem a cancelar mais cedo.  
+- Clientes com **baixo gasto total** também tendem a cancelar mais cedo.
+- Maiores detalhes no **relatorio** do notebook. 
 
 ### 5️⃣ Recomendações
 - Criar incentivos para contratos **anuais**.  
 - Melhorar a experiência de clientes com **pagamentos eletrônicos**.  
-- Oferecer descontos ou benefícios para **clientes novos (baixa tenure)** a fim de reduzir cancelamentos precoces.  
+- Oferecer descontos ou benefícios para **clientes novos (baixo meses de contrato)** a fim de reduzir cancelamentos precoces.
+- Maiores detalhes no **relatorio** do notebook.  
 
 ---
 
@@ -68,9 +71,8 @@ Com base nos dados fornecidos pela empresa, realizamos desde a **limpeza e prepa
 📌 Alguns gráficos desenvolvidos no projeto:  
 
 - Distribuição do churn  
-- Evasão por tipo de contrato  
-- Evasão por método de pagamento  
-- Boxplots comparando variáveis numéricas  
+- Evasão por todas as colunas categoricas  
+- Boxplots e Histograma comparando variáveis numéricas  
 
 ---
 ##🚀 Como Executar o Projeto
@@ -91,5 +93,5 @@ pip install pandas numpy matplotlib seaborn
 
 👤 Autor
 
-Seu Nome
-🔗 LinkedIn | GitHub
+Eric Petterson Lima Leite
+
